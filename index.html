@@ -5,108 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style>
-        .register .nav-tabs .nav-link:hover{
-            border: none;
-        }
-        .text-align{
-            margin-top: -3%;
-            margin-bottom: -9%;
+    <!-- Bootstrap css library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    .register .nav-tabs .nav-link:hover{
+        border: none;
+    }
+    .text-align{
+        margin-top: -3%;
+        margin-bottom: -9%;
 
-            padding: 10%;
-            margin-left: 30%;
-        }
-        .form-new{
-            margin-right: 22%;
-            margin-left: 20%;
-        }
-        .register-heading{
-            margin-left: 21%;
-            margin-bottom: 10%;
-            color: #000000;
-        }
-        .register-heading h1{
-            margin-left: 21%;
-            margin-bottom: 10%;
-            color: #e9ecef;
-        }
-        .register{
-            background: -webkit-linear-gradient(left, #b4dbec, #b4dbec);
-            margin-top: 3%;
-            padding: 3%;
-            border-radius: 2.5rem;
-        }
-        .btnSubmit
-        {
-            width: 50%;
-            border-radius: 1rem;
-            padding: 1.5%;
-            color: #fff;
-            background-color: #000000;
-            border: none;
-            cursor: pointer;
-            margin-right: 6%;
-            color: rgb(246, 246, 252);
-            margin-top: 4%;
-        }
-    </style>
+        padding: 10%;
+        margin-left: 30%;
+    }
+    .form-new{
+        margin-right: 22%;
+        margin-left: 20%;
+    }
+    .register-heading{
+        margin-left: 21%;
+        margin-bottom: 10%;
+        color: #000000;
+    }
+    .register-heading h1{
+        margin-left: 21%;
+        margin-bottom: 10%;
+        color: #e9ecef;
+    }
+    .register{
+        background: -webkit-linear-gradient(left, #b4dbec, #b4dbec);
+        margin-top: 3%;
+        padding: 3%;
+        border-radius: 2.5rem;
+    }
+    .btnSubmit
+    {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        cursor: pointer;
+        margin-right: 6%;
+        color: rgb(246, 246, 252);
+        margin-top: 4%;
+    }
+</style>
 
 </head>
 <body>
 
 
-<div class="container register">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h3 class="register-heading">GO RUSH PLUS ORDER</h3>
-                <div class="row register-form">
-                    <div class="col-md-12">
-                        <form method="post" autocomplete="off" name="google-sheet">
-                            <div class="form-group">
-                                <input type="text" name="Consignee's Name" class="form-control" placeholder="Consignee's Name *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Consignee's Phone" class="form-control" placeholder="Consignee's Phone *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Consignee's Email" class="form-control" placeholder="Consignee's Email *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Delivery Address" class="form-control" placeholder="Delivery Address *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Tracking Number" class="form-control" placeholder="Tracking Number *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Item" class="form-control" placeholder="Item *" value="" required=""/>
-                            </div>
+<center>
 
-                            <div class="form-group">
-                                <input type="text" name="Quantity" class="form-control" placeholder="Quantity *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Item Price (RM)" class="form-control" placeholder="Item Price (RM) *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Total Price (RM)" class="form-control" placeholder="Total Price (RM) *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="Supplier Name" class="form-control" placeholder="Supplier Name *" value="" required=""/>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="register-heading">GO RUSH PLUS ORDER</h3>
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+<form method="post" autocomplete="off" name="google-sheet">
+<div class="form-group">
+    <input type="text" name="Consignee's Name" class="form-control" placeholder="Consignee's Name *" value="" required=""/>
+</div><br>
+    <div class="form-group">
+        <input type="text" name="Consignee's Phone" class="form-control" placeholder="Consignee's Phone *" value="" required=""/>
+    </div><br>
+    <div class="form-group">
+        <input type="text" name="Consignee's Email" class="form-control" placeholder="Consignee's Email *" value="" required=""/>
+    </div><br>
+    <div class="form-group">
+        <input type="text" name="Delivery Address" class="form-control" placeholder="Delivery Address *" value="" required=""/>
+    </div><br>
+    <div class="form-group">
+        <input type="text" name="Tracking Number" class="form-control" placeholder="Tracking Number *" value="" required=""/>
+    </div><br>
+    <div class="form-group fieldGroup">
+        <div class="input-group">
+            <input type="text" name="Item" class="form-control" placeholder="Item"/>
+            <input type="text" name="Quantity" class="form-control" placeholder="Quantity"/>
+            <input type="text" name="Item Price (RM)" class="form-control" placeholder="Item Price (RM)"/>
+            <div class="input-group-addon">
+                <a href="javascript:void(0)" class="btn btn-success addMore"><span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> Add</a>
             </div>
+        </div>
+    </div>
+
+    <input type="text" name="Total Price (RM)" class="form-control" placeholder="Total Price (RM) *" value="" required=""/>
+    </div><br>
+    <div class="form-group">
+        <input type="text" name="Supplier Name" class="form-control" placeholder="Supplier Name *" value="" required=""/>
+    </div><br><br>
+
+    <div class="form-group">
+        <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+    </div><br>
+
+</form>
+
+<div class="form-group fieldGroupCopy" style="display: none;">
+    <div class="input-group">
+        <input type="text" name="Item-1" class="form-control" placeholder="Item"/>
+        <input type="text" name="Quantity-1" class="form-control" placeholder="Quantity"/>
+        <input type="text" name="Item Price (RM)-1" class="form-control" placeholder="Item Price (RM)"/>
+        <div class="input-group-addon">
+            <a href="javascript:void(0)" class="btn btn-danger remove"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</a>
         </div>
     </div>
 </div>
 
+
+
+</center>
+
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK8Aq46hmRbuXL36ECsn8B_NMDpq2gEzH2MXHLX425JFD-AOM99_FyXaSP5Zl5SqAolw/exec'
+    $(document).ready(function(){
+        //group add limit
+        var maxGroup = 10;
+
+        //add more fields group
+        $(".addMore").click(function(){
+            if($('body').find('.fieldGroup').length < maxGroup){
+                var fieldHTML = '<div class="form-group fieldGroup">'+$(".fieldGroupCopy").html()+'</div>';
+                $('body').find('.fieldGroup:last').after(fieldHTML);
+            }else{
+                alert('Maximum '+maxGroup+' groups are allowed.');
+            }
+        });
+
+
+        //remove fields group
+        $("body").on("click",".remove",function(){
+            $(this).parents(".fieldGroup").remove();
+        });
+    });
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwj9CLVaYMlqIslasLwv_lL5JDFD99y0qCPDv4o4-m5I3q_s-_3JUy3vIJ8MLIjAic22w/exec'
     const form = document.forms['google-sheet']
 
     form.addEventListener('submit', e => {
