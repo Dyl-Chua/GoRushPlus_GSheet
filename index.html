@@ -23,7 +23,7 @@
         .register-heading{
             margin-left: 21%;
             margin-bottom: 10%;
-            color: #e9ecef;
+            color: #000000;
         }
         .register-heading h1{
             margin-left: 21%;
@@ -31,7 +31,7 @@
             color: #e9ecef;
         }
         .register{
-            background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+            background: -webkit-linear-gradient(left, #b4dbec, #b4dbec);
             margin-top: 3%;
             padding: 3%;
             border-radius: 2.5rem;
@@ -42,7 +42,7 @@
             border-radius: 1rem;
             padding: 1.5%;
             color: #fff;
-            background-color: #03612e;
+            background-color: #000000;
             border: none;
             cursor: pointer;
             margin-right: 6%;
@@ -54,25 +54,48 @@
 </head>
 <body>
 
+
 <div class="container register">
     <div class="row">
         <div class="col-md-12">
             <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h3 class="register-heading">SYAHMI HELP ME</h3>
+                <h3 class="register-heading">GO RUSH PLUS ORDER</h3>
                 <div class="row register-form">
                     <div class="col-md-12">
                         <form method="post" autocomplete="off" name="google-sheet">
                             <div class="form-group">
-                                <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                <input type="text" name="Consignee's Name" class="form-control" placeholder="Consignee's Name *" value="" required=""/>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                <input type="text" name="Consignee's Phone" class="form-control" placeholder="Consignee's Phone *" value="" required=""/>
                             </div>
                             <div class="form-group">
-                                <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                                <input type="text" name="Consignee's Email" class="form-control" placeholder="Consignee's Email *" value="" required=""/>
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
+                                <input type="text" name="Delivery Address" class="form-control" placeholder="Delivery Address *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Tracking Number" class="form-control" placeholder="Tracking Number *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Item" class="form-control" placeholder="Item *" value="" required=""/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="Quantity" class="form-control" placeholder="Quantity *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Item Price (RM)" class="form-control" placeholder="Item Price (RM) *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Total Price (RM)" class="form-control" placeholder="Total Price (RM) *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Supplier Name" class="form-control" placeholder="Supplier Name *" value="" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
                             </div>
                         </form>
                     </div>
@@ -83,7 +106,7 @@
 </div>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJe5UU-iogar3_Nba01gLft-sCoNOdu0xsIdqOG9AJi0_e_6COlrdhW09cgF9z6yU7/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK8Aq46hmRbuXL36ECsn8B_NMDpq2gEzH2MXHLX425JFD-AOM99_FyXaSP5Zl5SqAolw/exec'
     const form = document.forms['google-sheet']
 
     form.addEventListener('submit', e => {
